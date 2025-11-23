@@ -1,0 +1,12 @@
+[project]
+name = "context-7-connecting"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "streamlit",
+    "pypdf",
+    "openagents",
+    "openai-agents>=0.6.1",
+]

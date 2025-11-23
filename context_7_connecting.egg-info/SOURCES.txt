@@ -1,0 +1,8 @@
+README.md
+main.py
+pyproject.toml
+context_7_connecting.egg-info/PKG-INFO
+context_7_connecting.egg-info/SOURCES.txt
+context_7_connecting.egg-info/dependency_links.txt
+context_7_connecting.egg-info/requires.txt
+context_7_connecting.egg-info/top_level.txt

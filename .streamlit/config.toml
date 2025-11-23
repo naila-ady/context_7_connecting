@@ -1,0 +1,6 @@
+[theme]
+primaryColor = "#4F8EF7"           # bright blue (buttons/links)
+backgroundColor = "#151a21"        # nearly black
+secondaryBackgroundColor = "#212733" # medium-dark for panels/sidebar
+textColor = "#B783FF"              # off-white
+font = "sans serif"
