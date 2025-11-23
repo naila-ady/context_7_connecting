@@ -4,17 +4,29 @@ This project implements a PDF summarizer agent using Streamlit and OpenAI Agents
 
 ## Setup
 
-1.  **Clone the repository.**
-2.  **Create a virtual environment (optional but recommended):**
-    ```bash
+1.  **Initialize project**
+2. ``` uv init
+3.  
+4.  **Create a virtual environment (optional but recommended):**
     uv venv
-    uv pip install -e .
+    .venv/Scripts/activate.
+    uv add openai-agents python dotenv
     ```
-3.  **Set up your API Key:**
+6.  **Set up your API Key:**
     Create a `.env` file in the root directory and add your Gemini API key:
     ```
     GEMINI_API_KEY=your_gemini_api_key_here
+    
     ```
+7. **Copy your gemini api key:**
+    go to .gemini folder and inside settings.json write the following with your own api key
+    "mcpServers": {
+    "context7": {
+      "command": "npx",
+      "args": ["-y", "@upstash/context7-mcp"],
+      "env": {
+        "CONTEXT7_API_KEY":""<YOUR_CONTEXT7_API_KEY_HERE>""
+      } 
 
 ## Running the Application
 
