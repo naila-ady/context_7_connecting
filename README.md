@@ -5,7 +5,8 @@ This project implements a PDF summarizer agent using Streamlit and OpenAI Agents
 ## Setup
 
 1.  **Initialize project**
-     ``` uv init
+     ```
+      uv init
      ```
   
 2.  **Create a virtual environment (optional but recommended):**
