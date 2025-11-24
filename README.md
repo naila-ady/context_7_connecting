@@ -40,6 +40,10 @@ To run the Streamlit application:
 ```bash
 streamlit run ui.py
 ```
+## Assets folder(screen shots) 
+```
+PROMPTS given to GEMINI CLI for running the project are captured and screen shots are displayed in the assets folder
+```
 
 
 
