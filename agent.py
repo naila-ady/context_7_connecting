@@ -6,7 +6,7 @@ from openai import AsyncOpenAI
 
 # Only load env once per process
 load_dotenv()
-API_KEY = os.getenv("GEMINI_API_KEY")
+gemini_api_key = os.getenv("GEMINI_API_KEY")
 
 def extract_text_from_pdf(pdf_path):
     """Extracts all text from a PDF file given its path."""
@@ -26,7 +26,7 @@ def summarize_text(text_to_summarize):
     
     client = AsyncOpenAI(
         base_url="https://generativelanguage.googleapis.com/v1beta/openai/",
-        api_key=API_KEY
+        api_key=gemini_api_key
     )
     model = OpenAIChatCompletionsModel(
         model="gemini-2.5-flash",  # If fails, use "gemini-2.0-flash"
@@ -45,7 +45,7 @@ def generate_quiz(text_for_quiz):
     """Generates a multiple-choice quiz from the given text using Gemini."""
     client = AsyncOpenAI(
         base_url="https://generativelanguage.googleapis.com/v1beta/openai/",
-        api_key=API_KEY
+        api_key=gemini_api_key
     )
     model = OpenAIChatCompletionsModel(
         model="gemini-2.5-flash",  # If fails, use "gemini-2.0-flash"
